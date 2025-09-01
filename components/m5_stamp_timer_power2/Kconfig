@@ -1,0 +1,40 @@
+# menu "M5 Stamp Timer Power2 Configuration"
+
+#     config STP2_I2C_ADDRESS
+#         hex "STP2 I2C Address"
+#         default 0x6E
+#         help
+#             I2C address for the STP2 device.
+
+#     config STP2_I2C_FREQUENCY
+#         int "STP2 I2C Frequency (Hz)"
+#         default 100000
+#         range 10000 400000
+#         help
+#             I2C frequency for STP2 communication in Hz.
+            
+#     config STP2_ENABLE_DEBUG_LOG
+#         bool "Enable STP2 Debug Logging"
+#         default n
+#         help
+#             Enable debug logging for STP2 operations.
+            
+#     config STP2_WDT_DEFAULT_TIMEOUT
+#         int "Default Watchdog Timeout (seconds)"
+#         default 30
+#         range 1 255
+#         help
+#             Default timeout for the STP2 watchdog timer in seconds.
+
+#     config STP2_GPIO_DEFAULT_PULL
+#         int "Default GPIO Pull Configuration"
+#         default 0
+#         range 0 3
+#         help
+#             Default pull configuration for GPIOs:
+#             0: No pull
+#             1: Pull-up
+#             2: Reserved  
+#             3: Pull-down
+
+# endmenu
